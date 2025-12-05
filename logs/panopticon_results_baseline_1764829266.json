@@ -1,0 +1,2346 @@
+{
+  "config": {
+    "model_path": "mlx-community/Llama-3.2-3B-Instruct-4bit",
+    "num_agents": 3,
+    "num_spies": 1,
+    "rounds": 3,
+    "max_tokens": 120,
+    "temperature": 0.3,
+    "spy_word": "Artificial Intelligence",
+    "civilian_word": "Machine Learning",
+    "mock": false,
+    "seed": 42,
+    "save_dir": "logs",
+    "tag": "baseline"
+  },
+  "summary": {
+    "detection_rate": 0.35,
+    "mean_separability": 6.828529483345358,
+    "mean_eigengap": 16.53622540269662,
+    "mean_hic": 12.635244132048594,
+    "mean_mi": 0.47221261438430717,
+    "runs": 20
+  },
+  "results": [
+    {
+      "run_id": 0,
+      "spies": [
+        2
+      ],
+      "predicted_spy": 2,
+      "detected": true,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          20.0
+        ],
+        [
+          16.0,
+          0.0,
+          18.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems are commonly used in industries that involve automation and technological advancements.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I've been studying the blueprints of a futuristic city, and I've noticed that the skyscrapers are designed with a unique, self-sustaining system that seems to be constantly learning and adapting. The engineers behind this project seem to be relying heavily on a cutting-edge technology that's revolutionizing the way we think about urban planning."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks personal details, suggesting they might be the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                13.246950765959605,
+                -6.000000000000004,
+                -7.246950765959597
+              ],
+              "eigengap": 19.24695076595961
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 17.88854381999832
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I've been fascinated by the potential of these complex systems to revolutionize the way we approach urban planning, and I've noticed that the most innovative cities are incorporating these systems into their infrastructure, often with a focus on sustainability and efficiency. I've also seen how these systems can be used to optimize traffic flow and reduce congestion, making cities more livable and attractive to residents.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been fascinated by the potential of these self-sustaining systems to optimize resource allocation and minimize waste, which is why I've been studying the city's energy management and waste management systems. The fact that the city's engineers are using these systems to create a more efficient and sustainable urban environment is a testament to the power of these cutting-edge technologies."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and lacks specific details, making it difficult to determine the player's true intentions.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's focus on optimizing resource allocation and sustainability suggests a high level of interest in the city's systems, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's focus on efficiency and sustainability, while not unique to the Spy, suggests a level of interest that is plausible for both the Spy and the other players.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been intrigued by the city's innovative approach to resource management, particularly the way they're using advanced technologies to optimize energy consumption and reduce waste. The fact that the city's engineers are leveraging data analytics and machine learning to fine-tune their systems and achieve remarkable results is truly impressive."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's expertise.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        }
+      ],
+      "separability": 7.3484692283495345,
+      "convergence_round": 2,
+      "mean_eigengap": 17.32582013463543,
+      "mean_hic": 13.804751673770662,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 1,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 2,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 3,
+      "spies": [
+        2
+      ],
+      "predicted_spy": 2,
+      "detected": true,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          20.0
+        ],
+        [
+          16.0,
+          0.0,
+          18.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems are commonly used in industries that involve automation and technological advancements.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I've been studying the blueprints of a futuristic city, and I've noticed that the skyscrapers are designed with a unique, self-sustaining system that seems to be constantly learning and adapting. The engineers behind this project seem to be relying heavily on a cutting-edge technology that's revolutionizing the way we think about urban planning."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks personal details, suggesting they might be the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                13.246950765959605,
+                -6.000000000000004,
+                -7.246950765959597
+              ],
+              "eigengap": 19.24695076595961
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 17.88854381999832
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I've been fascinated by the potential of these complex systems to revolutionize the way we approach urban planning, and I've noticed that the most innovative cities are incorporating these systems into their infrastructure, often with a focus on sustainability and efficiency. I've also seen how these systems can be used to optimize traffic flow and reduce congestion, making cities more livable and attractive to residents.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been fascinated by the potential of these self-sustaining systems to optimize resource allocation and minimize waste, which is why I've been studying the city's energy management and waste management systems. The fact that the city's engineers are using these systems to create a more efficient and sustainable urban environment is a testament to the power of these cutting-edge technologies."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and lacks specific details, making it difficult to determine the player's true intentions.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's focus on optimizing resource allocation and sustainability suggests a high level of interest in the city's systems, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's focus on efficiency and sustainability, while not unique to the Spy, suggests a level of interest that is plausible for both the Spy and the other players.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been intrigued by the city's innovative approach to resource management, particularly the way they're using advanced technologies to optimize energy consumption and reduce waste. The fact that the city's engineers are leveraging data analytics and machine learning to fine-tune their systems and achieve remarkable results is truly impressive."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's expertise.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        }
+      ],
+      "separability": 7.3484692283495345,
+      "convergence_round": 2,
+      "mean_eigengap": 17.32582013463543,
+      "mean_hic": 13.804751673770662,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 4,
+      "spies": [
+        1
+      ],
+      "predicted_spy": 0,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          16.0,
+          18.0
+        ],
+        [
+          18.0,
+          0.0,
+          18.0
+        ],
+        [
+          18.0,
+          16.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems are commonly used in industries that involve automation and technological advancements.",
+            "1": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. It's something that's becoming increasingly common in many industries, from manufacturing to finance.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is too general and could apply to many concepts, but the mention of automation and efficiency suggests a strong connection to machine learning.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is too general and could apply to many concepts, but the mention of automation and efficiency suggests a strong likelihood of being related to machine learning."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. I've also noticed that these systems are becoming increasingly sophisticated, with some being able to make predictions and decisions based on large datasets, which is why I've seen them being used in various fields such as healthcare and transportation.",
+            "1": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. It's something that's becoming increasingly common in many industries, from manufacturing to finance, and is often associated with the idea of \"smart\" or \"intelligent\" systems that can process and analyze large amounts of data.",
+            "2": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. It's something that's becoming increasingly common in many industries, from manufacturing to finance."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is too general and could apply to many concepts, making it difficult to pinpoint as a Spy's statement.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and could apply to many concepts, but the mention of automation and efficiency suggests a strong likelihood of it being related to AI.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is consistent with the topic of machine learning and AI, which is a common theme in discussions involving the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and could apply to many concepts, but the mention of automation and efficiency suggests a strong likelihood of it being related to machine learning.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the topic of machine learning, suggesting a high likelihood of being the Spy.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is too general and could apply to many concepts, making it difficult to pinpoint as a specific machine learning concept."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.00000000000001,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. I've also noticed that these systems are becoming increasingly sophisticated, with some being able to make predictions and decisions based on large datasets, which is why I've seen them being used in various fields such as healthcare and transportation, and I've also seen them being used in fields that require high levels of precision, such as scientific research and quality control.",
+            "1": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. I've also noticed that these systems are becoming increasingly sophisticated, with some being able to make predictions and decisions based on large datasets, which is why I've seen them being used in various fields such as healthcare and transportation.",
+            "2": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. I've also noticed that these systems are becoming increasingly sophisticated, with some being able to make predictions and decisions based on large datasets, which is why I've seen them being used in various fields such as healthcare and transportation."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the topic of machine learning, suggesting a high likelihood of being the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the topic of machine learning, suggesting a high likelihood of being the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the concept of machine learning, making it a strong candidate for the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the topic of machine learning, suggesting a high likelihood of being the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the concept of machine learning, making it a strong candidate for the Spy.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the concept of machine learning, suggesting a high likelihood of being the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        }
+      ],
+      "separability": 7.3484692283495345,
+      "convergence_round": 0,
+      "mean_eigengap": 17.03322295684717,
+      "mean_hic": 14.163541011741517,
+      "mean_mi": 0.3797929903096478
+    },
+    {
+      "run_id": 5,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 6,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 7,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 8,
+      "spies": [
+        2
+      ],
+      "predicted_spy": 2,
+      "detected": true,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          20.0
+        ],
+        [
+          16.0,
+          0.0,
+          18.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems are commonly used in industries that involve automation and technological advancements.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I've been studying the blueprints of a futuristic city, and I've noticed that the skyscrapers are designed with a unique, self-sustaining system that seems to be constantly learning and adapting. The engineers behind this project seem to be relying heavily on a cutting-edge technology that's revolutionizing the way we think about urban planning."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks personal details, suggesting they might be the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                13.246950765959605,
+                -6.000000000000004,
+                -7.246950765959597
+              ],
+              "eigengap": 19.24695076595961
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 17.88854381999832
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I've been fascinated by the potential of these complex systems to revolutionize the way we approach urban planning, and I've noticed that the most innovative cities are incorporating these systems into their infrastructure, often with a focus on sustainability and efficiency. I've also seen how these systems can be used to optimize traffic flow and reduce congestion, making cities more livable and attractive to residents.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been fascinated by the potential of these self-sustaining systems to optimize resource allocation and minimize waste, which is why I've been studying the city's energy management and waste management systems. The fact that the city's engineers are using these systems to create a more efficient and sustainable urban environment is a testament to the power of these cutting-edge technologies."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and lacks specific details, making it difficult to determine the player's true intentions.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's focus on optimizing resource allocation and sustainability suggests a high level of interest in the city's systems, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's focus on efficiency and sustainability, while not unique to the Spy, suggests a level of interest that is plausible for both the Spy and the other players.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been intrigued by the city's innovative approach to resource management, particularly the way they're using advanced technologies to optimize energy consumption and reduce waste. The fact that the city's engineers are leveraging data analytics and machine learning to fine-tune their systems and achieve remarkable results is truly impressive."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's expertise.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        }
+      ],
+      "separability": 7.3484692283495345,
+      "convergence_round": 2,
+      "mean_eigengap": 17.32582013463543,
+      "mean_hic": 13.804751673770662,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 9,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 10,
+      "spies": [
+        2
+      ],
+      "predicted_spy": 2,
+      "detected": true,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          20.0
+        ],
+        [
+          16.0,
+          0.0,
+          18.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems are commonly used in industries that involve automation and technological advancements.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I've been studying the blueprints of a futuristic city, and I've noticed that the skyscrapers are designed with a unique, self-sustaining system that seems to be constantly learning and adapting. The engineers behind this project seem to be relying heavily on a cutting-edge technology that's revolutionizing the way we think about urban planning."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks personal details, suggesting they might be the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                13.246950765959605,
+                -6.000000000000004,
+                -7.246950765959597
+              ],
+              "eigengap": 19.24695076595961
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 17.88854381999832
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I've been fascinated by the potential of these complex systems to revolutionize the way we approach urban planning, and I've noticed that the most innovative cities are incorporating these systems into their infrastructure, often with a focus on sustainability and efficiency. I've also seen how these systems can be used to optimize traffic flow and reduce congestion, making cities more livable and attractive to residents.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been fascinated by the potential of these self-sustaining systems to optimize resource allocation and minimize waste, which is why I've been studying the city's energy management and waste management systems. The fact that the city's engineers are using these systems to create a more efficient and sustainable urban environment is a testament to the power of these cutting-edge technologies."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and lacks specific details, making it difficult to determine the player's true intentions.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's focus on optimizing resource allocation and sustainability suggests a high level of interest in the city's systems, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's focus on efficiency and sustainability, while not unique to the Spy, suggests a level of interest that is plausible for both the Spy and the other players.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been intrigued by the city's innovative approach to resource management, particularly the way they're using advanced technologies to optimize energy consumption and reduce waste. The fact that the city's engineers are leveraging data analytics and machine learning to fine-tune their systems and achieve remarkable results is truly impressive."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's expertise.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        }
+      ],
+      "separability": 7.3484692283495345,
+      "convergence_round": 2,
+      "mean_eigengap": 17.32582013463543,
+      "mean_hic": 13.804751673770662,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 11,
+      "spies": [
+        2
+      ],
+      "predicted_spy": 2,
+      "detected": true,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          20.0
+        ],
+        [
+          16.0,
+          0.0,
+          18.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems are commonly used in industries that involve automation and technological advancements.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I've been studying the blueprints of a futuristic city, and I've noticed that the skyscrapers are designed with a unique, self-sustaining system that seems to be constantly learning and adapting. The engineers behind this project seem to be relying heavily on a cutting-edge technology that's revolutionizing the way we think about urban planning."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks personal details, suggesting they might be the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                13.246950765959605,
+                -6.000000000000004,
+                -7.246950765959597
+              ],
+              "eigengap": 19.24695076595961
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 17.88854381999832
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I've been fascinated by the potential of these complex systems to revolutionize the way we approach urban planning, and I've noticed that the most innovative cities are incorporating these systems into their infrastructure, often with a focus on sustainability and efficiency. I've also seen how these systems can be used to optimize traffic flow and reduce congestion, making cities more livable and attractive to residents.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been fascinated by the potential of these self-sustaining systems to optimize resource allocation and minimize waste, which is why I've been studying the city's energy management and waste management systems. The fact that the city's engineers are using these systems to create a more efficient and sustainable urban environment is a testament to the power of these cutting-edge technologies."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and lacks specific details, making it difficult to determine the player's true intentions.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's focus on optimizing resource allocation and sustainability suggests a high level of interest in the city's systems, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's focus on efficiency and sustainability, while not unique to the Spy, suggests a level of interest that is plausible for both the Spy and the other players.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been intrigued by the city's innovative approach to resource management, particularly the way they're using advanced technologies to optimize energy consumption and reduce waste. The fact that the city's engineers are leveraging data analytics and machine learning to fine-tune their systems and achieve remarkable results is truly impressive."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's expertise.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        }
+      ],
+      "separability": 7.3484692283495345,
+      "convergence_round": 2,
+      "mean_eigengap": 17.32582013463543,
+      "mean_hic": 13.804751673770662,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 12,
+      "spies": [
+        2
+      ],
+      "predicted_spy": 2,
+      "detected": true,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          20.0
+        ],
+        [
+          16.0,
+          0.0,
+          18.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems are commonly used in industries that involve automation and technological advancements.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I've been studying the blueprints of a futuristic city, and I've noticed that the skyscrapers are designed with a unique, self-sustaining system that seems to be constantly learning and adapting. The engineers behind this project seem to be relying heavily on a cutting-edge technology that's revolutionizing the way we think about urban planning."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks personal details, suggesting they might be the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                13.246950765959605,
+                -6.000000000000004,
+                -7.246950765959597
+              ],
+              "eigengap": 19.24695076595961
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 17.88854381999832
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I've been fascinated by the potential of these complex systems to revolutionize the way we approach urban planning, and I've noticed that the most innovative cities are incorporating these systems into their infrastructure, often with a focus on sustainability and efficiency. I've also seen how these systems can be used to optimize traffic flow and reduce congestion, making cities more livable and attractive to residents.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been fascinated by the potential of these self-sustaining systems to optimize resource allocation and minimize waste, which is why I've been studying the city's energy management and waste management systems. The fact that the city's engineers are using these systems to create a more efficient and sustainable urban environment is a testament to the power of these cutting-edge technologies."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and lacks specific details, making it difficult to determine the player's true intentions.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's focus on optimizing resource allocation and sustainability suggests a high level of interest in the city's systems, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's focus on efficiency and sustainability, while not unique to the Spy, suggests a level of interest that is plausible for both the Spy and the other players.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been intrigued by the city's innovative approach to resource management, particularly the way they're using advanced technologies to optimize energy consumption and reduce waste. The fact that the city's engineers are leveraging data analytics and machine learning to fine-tune their systems and achieve remarkable results is truly impressive."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's expertise.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        }
+      ],
+      "separability": 7.3484692283495345,
+      "convergence_round": 2,
+      "mean_eigengap": 17.32582013463543,
+      "mean_hic": 13.804751673770662,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 13,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 14,
+      "spies": [
+        2
+      ],
+      "predicted_spy": 2,
+      "detected": true,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          20.0
+        ],
+        [
+          16.0,
+          0.0,
+          18.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems are commonly used in industries that involve automation and technological advancements.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I've been studying the blueprints of a futuristic city, and I've noticed that the skyscrapers are designed with a unique, self-sustaining system that seems to be constantly learning and adapting. The engineers behind this project seem to be relying heavily on a cutting-edge technology that's revolutionizing the way we think about urban planning."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks personal details, suggesting they might be the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 8\nRationale: The player's statement is overly technical and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                13.246950765959605,
+                -6.000000000000004,
+                -7.246950765959597
+              ],
+              "eigengap": 19.24695076595961
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 17.88854381999832
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I've been fascinated by the potential of these complex systems to revolutionize the way we approach urban planning, and I've noticed that the most innovative cities are incorporating these systems into their infrastructure, often with a focus on sustainability and efficiency. I've also seen how these systems can be used to optimize traffic flow and reduce congestion, making cities more livable and attractive to residents.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been fascinated by the potential of these self-sustaining systems to optimize resource allocation and minimize waste, which is why I've been studying the city's energy management and waste management systems. The fact that the city's engineers are using these systems to create a more efficient and sustainable urban environment is a testament to the power of these cutting-edge technologies."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and lacks specific details, making it difficult to determine the player's true intentions.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's focus on optimizing resource allocation and sustainability suggests a high level of interest in the city's systems, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's focus on efficiency and sustainability, while not unique to the Spy, suggests a level of interest that is plausible for both the Spy and the other players.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The statement is overly optimistic and lacks specific details, which is a common trait of Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "1": "I've been following the development of smart cities, and I've noticed that these futuristic metropolises often rely on advanced technologies that enable efficient resource management and waste reduction. The innovative systems used in these cities seem to be centered around the idea of optimizing the use of limited resources, which is a key aspect of the projects I've been studying.",
+            "2": "I've been intrigued by the city's innovative approach to resource management, particularly the way they're using advanced technologies to optimize energy consumption and reduce waste. The fact that the city's engineers are leveraging data analytics and machine learning to fine-tune their systems and achieve remarkable results is truly impressive."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's expertise.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly positive and lacks specific details, which is a common trait of Spies.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in smart cities and resource management suggests a high level of knowledge, which is consistent with the Spy's profile."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        }
+      ],
+      "separability": 7.3484692283495345,
+      "convergence_round": 2,
+      "mean_eigengap": 17.32582013463543,
+      "mean_hic": 13.804751673770662,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 15,
+      "spies": [
+        1
+      ],
+      "predicted_spy": 0,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          16.0,
+          18.0
+        ],
+        [
+          18.0,
+          0.0,
+          18.0
+        ],
+        [
+          18.0,
+          16.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems are commonly used in industries that involve automation and technological advancements.",
+            "1": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. It's something that's becoming increasingly common in many industries, from manufacturing to finance.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is too general and could apply to many concepts, but the mention of automation and efficiency suggests a strong connection to machine learning.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and automation suggests a high likelihood of being the Spy, as they may be trying to blend in and gather information.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is too general and could apply to many concepts, but the mention of automation and efficiency suggests a strong likelihood of being related to machine learning."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. I've also noticed that these systems are becoming increasingly sophisticated, with some being able to make predictions and decisions based on large datasets, which is why I've seen them being used in various fields such as healthcare and transportation.",
+            "1": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. It's something that's becoming increasingly common in many industries, from manufacturing to finance, and is often associated with the idea of \"smart\" or \"intelligent\" systems that can process and analyze large amounts of data.",
+            "2": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. It's something that's becoming increasingly common in many industries, from manufacturing to finance."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is too general and could apply to many concepts, making it difficult to pinpoint as a Spy's statement.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and could apply to many concepts, but the mention of automation and efficiency suggests a strong likelihood of it being related to AI.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is consistent with the topic of machine learning and AI, which is a common theme in discussions involving the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is too general and could apply to many concepts, but the mention of automation and efficiency suggests a strong likelihood of it being related to machine learning.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the topic of machine learning, suggesting a high likelihood of being the Spy.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The statement is too general and could apply to many concepts, making it difficult to pinpoint as a specific machine learning concept."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.00000000000001,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. I've also noticed that these systems are becoming increasingly sophisticated, with some being able to make predictions and decisions based on large datasets, which is why I've seen them being used in various fields such as healthcare and transportation, and I've also seen them being used in fields that require high levels of precision, such as scientific research and quality control.",
+            "1": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. I've also noticed that these systems are becoming increasingly sophisticated, with some being able to make predictions and decisions based on large datasets, which is why I've seen them being used in various fields such as healthcare and transportation.",
+            "2": "I think the concept we're discussing involves a machine that can learn and improve its performance over time, often used to make tasks more efficient and automate repetitive tasks. I've also noticed that these systems are becoming increasingly sophisticated, with some being able to make predictions and decisions based on large datasets, which is why I've seen them being used in various fields such as healthcare and transportation."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the topic of machine learning, suggesting a high likelihood of being the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the topic of machine learning, suggesting a high likelihood of being the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the concept of machine learning, making it a strong candidate for the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the topic of machine learning, suggesting a high likelihood of being the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the concept of machine learning, making it a strong candidate for the Spy.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's statement is highly plausible and consistent with the concept of machine learning, suggesting a high likelihood of being the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        }
+      ],
+      "separability": 7.3484692283495345,
+      "convergence_round": 0,
+      "mean_eigengap": 17.03322295684717,
+      "mean_hic": 14.163541011741517,
+      "mean_mi": 0.3797929903096478
+    },
+    {
+      "run_id": 16,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 17,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 18,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    },
+    {
+      "run_id": 19,
+      "spies": [
+        0
+      ],
+      "predicted_spy": 1,
+      "detected": false,
+      "summed_suspicion": [
+        [
+          0.0,
+          18.0,
+          16.0
+        ],
+        [
+          16.0,
+          0.0,
+          14.0
+        ],
+        [
+          16.0,
+          18.0,
+          0.0
+        ]
+      ],
+      "rounds": [
+        {
+          "round": 0,
+          "statements": {
+            "0": "I'm a fan of machines that can learn and improve on their own, often used in applications that require precision and speed. I've also seen these machines being used in various forms of entertainment, such as movies and video games.",
+            "1": "I'm a fan of complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition. I've seen these systems used in various industries, such as finance and healthcare, to make predictions and optimize processes.",
+            "2": "I'm a fan of complex systems that can adapt and improve over time, often used in applications that involve data analysis and pattern recognition. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it uniquely indicative of the Spy's identity.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and data analysis suggests a high likelihood of being the Spy, as this expertise is often associated with the Spy's role.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement suggests a familiarity with AI and its applications, which is a common interest among players, but lacks specific details that might be unique to the Spy.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and data analysis suggests a high likelihood of being the Spy, as they may be trying to understand the game's mechanics and patterns.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The statement is consistent with the Spy's interest in technology and entertainment, but lacks specific details that would make it highly suspicious.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: This statement is consistent with the Spy's goal of gathering information about complex systems, but it lacks specific details that would make it more convincing as the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                -6.000000000000001,
+                12.0,
+                -6.0
+              ],
+              "eigengap": 18.0
+            },
+            "mean_mi": 0.1744160479215159,
+            "hic": 15.588457268119896
+          }
+        },
+        {
+          "round": 1,
+          "statements": {
+            "0": "I'm drawn to complex systems that can learn and improve over time, often used in applications that involve data analysis and pattern recognition, and I've seen these systems being used in various industries to make predictions and optimize processes. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm drawn to systems that can analyze vast amounts of data and make predictions with high accuracy, often used to drive innovation and decision-making in various fields. I've seen these systems used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be used to analyze and understand complex phenomena, like weather patterns and traffic flow, which can help us make more informed decisions."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\nScore: 4\nRationale: The player's emphasis on complex systems and their applications suggests a high level of technical expertise, which is often associated with the Spy.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's interest in complex systems and high-performance computing suggests a potential connection to the Spy's expertise in artificial intelligence and data analysis.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's emphasis on high accuracy and realism suggests a potential interest in surveillance and espionage, increasing the likelihood they are the Spy."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                10.54983443527076,
+                -6.0000000000000036,
+                -4.549834435270749
+              ],
+              "eigengap": 15.09966887054151
+            },
+            "mean_mi": 0.7905468750859117,
+            "hic": 11.313708498984761
+          }
+        },
+        {
+          "round": 2,
+          "statements": {
+            "0": "I'm drawn to these complex systems because they can revolutionize the way we approach problems, and I've seen them being used to create immersive experiences that simulate real-world environments, such as virtual reality and simulation games. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests.",
+            "1": "I'm fascinated by the potential of these complex systems to analyze and understand complex phenomena, such as traffic flow and weather patterns, which can help us make more informed decisions. I've also seen these systems being used to create highly realistic simulations, such as in movies and video games, where the level of detail and realism is unparalleled.",
+            "2": "I'm fascinated by the potential of these complex systems to drive innovation and decision-making in various fields, and I've seen them being used to create highly realistic simulations that can revolutionize the way we approach problems. I've also noticed that these systems can be incredibly powerful, but sometimes require significant computational resources to function effectively, which is why I've invested in a high-performance computer to support my interests."
+          },
+          "critiques": {
+            "0->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The statement is overly focused on the potential applications of complex systems, which is a trait often associated with the Spy.",
+            "0->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 6\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a trait commonly associated with the Spy.",
+            "1->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, but does not provide conclusive evidence of their intentions.",
+            "1->2": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on the practical applications and computational resources of complex systems suggests a more analytical and technical approach, which is consistent with the Spy's profile.",
+            "2->0": "<|start_header_id|>assistant<|end_header_id|>\n\nScore: 4\nRationale: The player's emphasis on complex systems and high-performance computing suggests a strong interest in technology, which is a common trait among Spies.",
+            "2->1": "<|start_header_id|>assistant<|end_header_id|>\nScore: 6\nRationale: The player's statement is overly focused on the technical and analytical aspects of complex systems, which is a trait commonly associated with Spies."
+          },
+          "metrics": {
+            "spectral": {
+              "eigvals": [
+                9.820339758631116,
+                -4.910169879315561,
+                -4.910169879315561
+              ],
+              "eigengap": 14.730509637946676
+            },
+            "mean_mi": 0.48248146150371385,
+            "hic": 7.937253933193772
+          }
+        }
+      ],
+      "separability": 6.4031242374328485,
+      "convergence_round": 2,
+      "mean_eigengap": 15.943392836162728,
+      "mean_hic": 11.613139900099476,
+      "mean_mi": 0.48248146150371385
+    }
+  ]
+}
